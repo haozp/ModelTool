@@ -15,6 +15,12 @@
 		432F22FC212575C10045137A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 432F22FB212575C10045137A /* main.m */; };
 		432F2306212575C10045137A /* ModelCreateToolTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 432F2305212575C10045137A /* ModelCreateToolTests.m */; };
 		432F2311212575C10045137A /* ModelCreateToolUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 432F2310212575C10045137A /* ModelCreateToolUITests.m */; };
+		432F2329212576320045137A /* ZPModelTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 432F2320212576310045137A /* ZPModelTool.m */; };
+		432F232A212576320045137A /* moelToolTest.plist in Resources */ = {isa = PBXBuildFile; fileRef = 432F2322212576320045137A /* moelToolTest.plist */; };
+		432F232B212576320045137A /* other-array.plist in Resources */ = {isa = PBXBuildFile; fileRef = 432F2323212576320045137A /* other-array.plist */; };
+		432F232C212576320045137A /* other-string.plist in Resources */ = {isa = PBXBuildFile; fileRef = 432F2324212576320045137A /* other-string.plist */; };
+		432F232D212576320045137A /* test.json in Resources */ = {isa = PBXBuildFile; fileRef = 432F2325212576320045137A /* test.json */; };
+		432F232E212576320045137A /* JustTestNormalModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 432F2328212576320045137A /* JustTestNormalModel.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +57,14 @@
 		432F230C212575C10045137A /* ModelCreateToolUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ModelCreateToolUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		432F2310212575C10045137A /* ModelCreateToolUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ModelCreateToolUITests.m; sourceTree = "<group>"; };
 		432F2312212575C10045137A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		432F231F212576310045137A /* ZPModelTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZPModelTool.h; sourceTree = "<group>"; };
+		432F2320212576310045137A /* ZPModelTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZPModelTool.m; sourceTree = "<group>"; };
+		432F2322212576320045137A /* moelToolTest.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = moelToolTest.plist; sourceTree = "<group>"; };
+		432F2323212576320045137A /* other-array.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "other-array.plist"; sourceTree = "<group>"; };
+		432F2324212576320045137A /* other-string.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "other-string.plist"; sourceTree = "<group>"; };
+		432F2325212576320045137A /* test.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = test.json; sourceTree = "<group>"; };
+		432F2327212576320045137A /* JustTestNormalModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JustTestNormalModel.h; sourceTree = "<group>"; };
+		432F2328212576320045137A /* JustTestNormalModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JustTestNormalModel.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +115,9 @@
 		432F22EB212575C10045137A /* ModelCreateTool */ = {
 			isa = PBXGroup;
 			children = (
+				432F2321212576320045137A /* data */,
+				432F2326212576320045137A /* model */,
+				432F231E212576310045137A /* ModelTool */,
 				432F22EC212575C10045137A /* AppDelegate.h */,
 				432F22ED212575C10045137A /* AppDelegate.m */,
 				432F22EF212575C10045137A /* ViewController.h */,
@@ -130,6 +147,35 @@
 				432F2312212575C10045137A /* Info.plist */,
 			);
 			path = ModelCreateToolUITests;
+			sourceTree = "<group>";
+		};
+		432F231E212576310045137A /* ModelTool */ = {
+			isa = PBXGroup;
+			children = (
+				432F231F212576310045137A /* ZPModelTool.h */,
+				432F2320212576310045137A /* ZPModelTool.m */,
+			);
+			path = ModelTool;
+			sourceTree = "<group>";
+		};
+		432F2321212576320045137A /* data */ = {
+			isa = PBXGroup;
+			children = (
+				432F2322212576320045137A /* moelToolTest.plist */,
+				432F2323212576320045137A /* other-array.plist */,
+				432F2324212576320045137A /* other-string.plist */,
+				432F2325212576320045137A /* test.json */,
+			);
+			path = data;
+			sourceTree = "<group>";
+		};
+		432F2326212576320045137A /* model */ = {
+			isa = PBXGroup;
+			children = (
+				432F2327212576320045137A /* JustTestNormalModel.h */,
+				432F2328212576320045137A /* JustTestNormalModel.m */,
+			);
+			path = model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -241,6 +287,10 @@
 				432F22F9212575C10045137A /* LaunchScreen.storyboard in Resources */,
 				432F22F6212575C10045137A /* Assets.xcassets in Resources */,
 				432F22F4212575C10045137A /* Main.storyboard in Resources */,
+				432F232B212576320045137A /* other-array.plist in Resources */,
+				432F232C212576320045137A /* other-string.plist in Resources */,
+				432F232D212576320045137A /* test.json in Resources */,
+				432F232A212576320045137A /* moelToolTest.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -266,7 +316,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				432F22F1212575C10045137A /* ViewController.m in Sources */,
+				432F2329212576320045137A /* ZPModelTool.m in Sources */,
 				432F22FC212575C10045137A /* main.m in Sources */,
+				432F232E212576320045137A /* JustTestNormalModel.m in Sources */,
 				432F22EE212575C10045137A /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

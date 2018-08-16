@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>carArryString</key>
+	<array>
+		<string>nihao</string>
+		<string>nihao2</string>
+		<string>nihao3</string>
+		<string>nihao4</string>
+		<string>nihao5</string>
+		<string>nihao</string>
+		<string>nihao</string>
+		<string>nihao</string>
+	</array>
+	<key>promin</key>
+	<string>sz</string>
+	<key>conrry</key>
+	<string>china</string>
+	<key>teeDictString</key>
+	<dict>
+		<key>name</key>
+		<string>shuaige</string>
+		<key>year</key>
+		<string>2018</string>
+	</dict>
+</dict>
+</plist>
