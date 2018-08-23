@@ -7,3 +7,19 @@
  可以单独处理字典中某个以小部分字典 改变传入值即可。
  
  目前需要自己手动复制 log 日志 复制到对应的.h 和 .m 中。 2018-8-16
+
+
+# OCModelCreatePlus
+该工具优化 ModelTool 的一个mac应用，会自动创建在对应的工程里创建.h 和 .m两个文件，并添加到用户的工程里（包括文件的引用）
+用户需要做三件事 
+1、指定要添加模型的工程
+2、复制json到工具里
+3、双击工程文件夹里的 createMdoel.command 
+
+
+
+
+
+注：
+双击createMdoel.command 如果提示文件坏了或者无权限，需要对该文件进行处理，进到该文件的文件夹里执行： sudo chmod -R 777 createMdoel.command
+
