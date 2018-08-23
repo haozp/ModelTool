@@ -8,6 +8,7 @@
 
 #import "ViewController.h"
 #import "ZPModelTool.h"
+#import "JSONTestModel.h"
 
 @interface ViewController ()
 
@@ -19,20 +20,20 @@
     [super viewDidLoad];
 
     //大部分数据是该形式
-    NSString *fineNomal = @"moelToolTest";
-    NSString *filePath = [[NSBundle mainBundle]pathForResource:fineNomal ofType:@"plist"];
-    NSDictionary *normalDict = [NSDictionary dictionaryWithContentsOfFile:filePath];
-    [[ZPModelTool shareInstance]createPropertyCodeWithDict:normalDict with:@"JustTestNormalModel"];
-    
-    NSString *fineUnNomalStrig = @"other-string";//数组是字符
-    NSString *filePathString = [[NSBundle mainBundle]pathForResource:fineUnNomalStrig ofType:@"plist"];
-    NSDictionary *dictString = [NSDictionary dictionaryWithContentsOfFile:filePathString];
-    [[ZPModelTool shareInstance]createPropertyCodeWithDict:dictString with:@"JustTestStringModel"];
-    
-    NSString *fineUnNomalArray = @"other-array";//数组是数组
-    NSString *filePathArray = [[NSBundle mainBundle]pathForResource:fineUnNomalArray ofType:@"plist"];
-    NSDictionary *dictArray = [NSDictionary dictionaryWithContentsOfFile:filePathArray];
-    [[ZPModelTool shareInstance]createPropertyCodeWithDict:dictArray with:@"JustTestArrayModel"];
+//    NSString *fineNomal = @"moelToolTest";
+//    NSString *filePath = [[NSBundle mainBundle]pathForResource:fineNomal ofType:@"plist"];
+//    NSDictionary *normalDict = [NSDictionary dictionaryWithContentsOfFile:filePath];
+//    [[ZPModelTool shareInstance]createPropertyCodeWithDict:normalDict with:@"JustTestNormalModel"];
+//
+//    NSString *fineUnNomalStrig = @"other-string";//数组是字符
+//    NSString *filePathString = [[NSBundle mainBundle]pathForResource:fineUnNomalStrig ofType:@"plist"];
+//    NSDictionary *dictString = [NSDictionary dictionaryWithContentsOfFile:filePathString];
+//    [[ZPModelTool shareInstance]createPropertyCodeWithDict:dictString with:@"JustTestStringModel"];
+//
+//    NSString *fineUnNomalArray = @"other-array";//数组是数组
+//    NSString *filePathArray = [[NSBundle mainBundle]pathForResource:fineUnNomalArray ofType:@"plist"];
+//    NSDictionary *dictArray = [NSDictionary dictionaryWithContentsOfFile:filePathArray];
+//    [[ZPModelTool shareInstance]createPropertyCodeWithDict:dictArray with:@"JustTestArrayModel"];
     
     
     NSString *json = @"test";//json
@@ -40,7 +41,12 @@
     NSData *jsonData = [NSData dataWithContentsOfFile:jsonPath];
     NSDictionary *dictJson = [NSJSONSerialization JSONObjectWithData:jsonData options:NSJSONReadingAllowFragments error:nil];
     [[ZPModelTool shareInstance]createPropertyCodeWithDict:dictJson with:@"JSONTestModel"];
-
+    
+    JSONTestModel *model = [[JSONTestModel alloc]init];
+    model.data.counts = [NSNumber numberWithInt:13];
+    
+   
+   
 
 }
 

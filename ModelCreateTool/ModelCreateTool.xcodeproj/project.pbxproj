@@ -20,7 +20,7 @@
 		432F232B212576320045137A /* other-array.plist in Resources */ = {isa = PBXBuildFile; fileRef = 432F2323212576320045137A /* other-array.plist */; };
 		432F232C212576320045137A /* other-string.plist in Resources */ = {isa = PBXBuildFile; fileRef = 432F2324212576320045137A /* other-string.plist */; };
 		432F232D212576320045137A /* test.json in Resources */ = {isa = PBXBuildFile; fileRef = 432F2325212576320045137A /* test.json */; };
-		432F232E212576320045137A /* JustTestNormalModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 432F2328212576320045137A /* JustTestNormalModel.m */; };
+		43770A5B212E9EEB00C2C639 /* JSONTestModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 43770A5A212E9EEB00C2C639 /* JSONTestModel.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,8 +63,8 @@
 		432F2323212576320045137A /* other-array.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "other-array.plist"; sourceTree = "<group>"; };
 		432F2324212576320045137A /* other-string.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "other-string.plist"; sourceTree = "<group>"; };
 		432F2325212576320045137A /* test.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = test.json; sourceTree = "<group>"; };
-		432F2327212576320045137A /* JustTestNormalModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JustTestNormalModel.h; sourceTree = "<group>"; };
-		432F2328212576320045137A /* JustTestNormalModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JustTestNormalModel.m; sourceTree = "<group>"; };
+		43770A59212E9EEB00C2C639 /* JSONTestModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JSONTestModel.h; sourceTree = "<group>"; };
+		43770A5A212E9EEB00C2C639 /* JSONTestModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JSONTestModel.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -172,8 +172,8 @@
 		432F2326212576320045137A /* model */ = {
 			isa = PBXGroup;
 			children = (
-				432F2327212576320045137A /* JustTestNormalModel.h */,
-				432F2328212576320045137A /* JustTestNormalModel.m */,
+				43770A59212E9EEB00C2C639 /* JSONTestModel.h */,
+				43770A5A212E9EEB00C2C639 /* JSONTestModel.m */,
 			);
 			path = model;
 			sourceTree = "<group>";
@@ -245,6 +245,7 @@
 				TargetAttributes = {
 					432F22E8212575C10045137A = {
 						CreatedOnToolsVersion = 9.2;
+						LastSwiftMigration = 0920;
 						ProvisioningStyle = Automatic;
 					};
 					432F2300212575C10045137A = {
@@ -317,8 +318,8 @@
 			files = (
 				432F22F1212575C10045137A /* ViewController.m in Sources */,
 				432F2329212576320045137A /* ZPModelTool.m in Sources */,
+				43770A5B212E9EEB00C2C639 /* JSONTestModel.m in Sources */,
 				432F22FC212575C10045137A /* main.m in Sources */,
-				432F232E212576320045137A /* JustTestNormalModel.m in Sources */,
 				432F22EE212575C10045137A /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -482,11 +483,15 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = ModelCreateTool/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.test.ModelCreateTool;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "ModelCreateTool/model/ModelCreateTool-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -495,11 +500,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = ModelCreateTool/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.test.ModelCreateTool;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "ModelCreateTool/model/ModelCreateTool-Bridging-Header.h";
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
